@@ -1,0 +1,1126 @@
+<!--
+   Google HTML5 slide template
+   
+   Original slides by: 
+     Authors: Luke Mahé (code)
+              Marcin Wichary (code and design)
+            
+              Dominic Mazzoni (browser compatibility)
+              Charles Chen (ChromeVox support)
+   
+     URL: http://code.google.com/p/html5slides/
+   
+   Modifications by: Juan Musleh 
+   -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Ladies Learning Python</title>
+      <meta charset="utf-8" />
+      <script src="assets/default.js"></script>
+   </head>
+   <body style="display: none">
+      <section class="slides layout-regular template-default" />
+      <img src="assets/images/ladieslearningcode-125x125.gif" />
+      <article>
+         <h1>
+            Learning to Program
+            <br />
+            with Python 
+         </h1>
+         <br />
+         <p>
+            Juan Musleh 
+            <br />
+            @juanmusleh
+         </p>
+      </article>
+      <article id="what-is-python?">
+         <style>
+            #what-is-python { margin: 100px 0px; font-size: 40px; line-height: 50px; };
+         </style>
+         <h3>
+            What is Python?
+         </h3>
+         <p>
+         <div class="build">
+            <p class="large-font">Python is a programming language.</p>
+            <p class="large-font">What's a programming language?</p>
+            <p class="large-font">Why do we need one?</p>
+         </div>
+      </article>
+      <article id="computer-wishes">
+         <style>
+            #computer-wishes h3 { padding-bottom: 10px; }
+            #computer-wishes img { margin-left: 70px; }
+         </style>
+         <h3>
+            1. Your computer speaks a different language.
+         </h3>
+         <p>If humans and computers could speak the same language, we wouldn't need a programming language</p>
+         <img src="assets/images/machine-language.jpg" width="600" height="411" border="1" />
+      </article>
+      <article id="middle-ground">
+         <h3>
+            This is where a programming language comes in.
+         </h3>
+         <style>
+            #middle-ground p { margin-top: 100px }
+         </style>
+         <p>A programming language is a language that is designed to communicate instructions to a computer.</p>
+         <p>It's a language that's relatively easy for humans to learn and for computers to understand.</p>
+      </article>
+      <article id="stupid-computer">
+         <style>
+            #stupid-computer p { margin-top: 100px; }
+         </style>
+         <h3>
+            2. Your computer is not very smart.
+         </h3>
+         <p> Your computer can only do what you tell it to if you give it exact instructions.</p>
+         <p> A program is made up of a set of instructions and each instruction performs a very specific task</p>
+      </article>
+      <article id="stupid-computer">
+         <h3>People vs. Computers</h3>
+         <p class="large-font">
+            Suppose you had to teach a kid how to cross a road
+         </p>
+      </article>
+      <article>
+         <h3>People vs. Computers</h3>
+         <p>1. Stand on the pavement. </p>
+         <p>2. If traffic is coming, let it pass. </p>
+         <p>3. When it's safe, walk accross the road.</p>
+      </article>
+      <article>
+         <h3>People understand GENERAL instructions.</h3>
+         <p>
+            We left out some parts of the process, but a person could figure out:
+         </p>
+         <p> What is a pavement? How to get there?
+         <p> What is traffic?
+         <p> How do you walk across the road?
+         <p> When do you stop walking?
+         <p>etc, etc, etc (there are many little steps)</p>
+      </article>
+      <article id="computers-exact">
+         <style>
+            #computers-exact p { margin: 150px 0px; };
+         </style>
+         <h3>Computers understand EXACT instructions.</h3>
+         <p class="large-font">
+            This same recipe for a computer would be much, much longer.
+         </p>
+      </article>
+      <article>
+         <h3>1. Stand on the Pavement</h3>
+         <p>What is a pavement?</p>
+         <p>Where on the pavement to stand?</p>
+         <p>What if there is no pavement?</p>
+         <p>Stand facing which way?</p>
+         <p>How to stand?</p>
+         <p>etc, etc, etc</p>
+      </article>
+      <article>
+         <h3>2. If traffic coming let it pass</h3>
+         <p>What is traffic?</p>
+         <p>What if there is no traffic?</p>
+         <p>What if it's a one way street?</p>
+         <p>What if it's a two way street?</p>
+         <p>What if there's a cop and traffic lights?</p>
+         <p>etc, etc, etc</p>
+      </article>
+      <article id="learned-programming">
+         <style>
+            #learned-programming p { margin-top: 100px; }
+         </style>
+         <h3>
+            You've just learned what programming is!
+         </h3>
+         <p class="large-font">Programming is writing out specific instructions for a computer using a programming
+            language (like Python).
+         </p>
+      </article>
+      <article id="python-rocks">
+         <style>
+            #python-rocks .large-font { margin: 50px; }
+         </style>
+         <h3>
+            Why Python Rocks!
+         </h3>
+         <p>Easy to use: It is closer to human language than to machine language.</p>
+         <p>Powerful: It's used in academic research, at Google and YouTube.</p>
+         <p>Runs Everywhere: It's platform indepenent. You can write your program on a Mac and run it on Windows.</p>
+         <p>Free and Open Source.</p>
+         <p>Great Community.</p>
+      </article>
+      <article id="python-interpreter">
+         <style>
+            #python-interpreter .instructions { margin-top: 100px; }
+         </style>
+         <h3>
+            Time to see Python in action!
+         </h3>
+         <p> We need to tell our computer that we're going to "speak python"</p>
+         <p> Let's go into the python interpreter</p>
+         <div class="instructions">
+            <p><b>OS X</b></p>
+            <section>
+               <pre>Applications -> Utilities -> Terminal</pre>
+            </section>
+            <p>
+            <p><b>Windows</b> (C:\windows\system32\cmd.exe)</p>
+            <section>
+               <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
+            </section>
+         </div>
+      </article>
+      <article id="ask-python">
+         <style>
+            #ask-python .large-font { margin-top: 100px; }
+         </style>
+         <section class="build">
+            <pre>python</pre>
+            <pre>>>></pre>
+            <p class="large-font">Let's ask Python to do something.</p>
+         </section>
+      </article>
+      <article>
+         <section class="build">
+            <pre>>>> 1 + 1</pre>
+            <pre> 2</pre>
+            <pre>>>> 2 - 3</pre>
+            <pre> -1 </pre>
+            <pre>>>> 297 - 5 * 25 - 130</pre>
+            <pre>>>> 42</pre>
+            <p class="large-font">Python can do math, and it can do it much quicker than a person can.</p>
+         </section>
+      </article>
+      <article id="python-knows">
+         <style>
+            #python-knows .large-font { margin-top: 100px; }
+         </style>
+         <section class="build">
+            <h3>
+               Is it like a calculator? 
+            </h3>
+            <pre>>>> 1 + 2 + 3<br />6</pre>
+            <pre>"Good" + " morning"</pre>
+            <pre>"Good morning"</pre>
+            <p class="large-font">Python knows the difference between a number and a word.</p>
+         </section>
+      </article>
+      <article id="integer">
+         <style>
+            #integer .python-class { margin: 100px 0px; }
+         </style>
+         <h3>
+            Numbers in Python 
+         </h3>
+         <p>In Python ...</p>
+         <p class="python-class">Numbers without decimals are called <b>INTEGERS</b>. We just did some math with some integers.</p>
+         <p> <b>1</b> is an Integer. <b>1.0</b> is NOT an integer </p>
+         <pre>>>> type(1)<br />&lttype 'int'&gt <br />>>> type(1.0)<br />&lttype 'float'&gt </pre>
+      </article>
+      <article id="string">
+         <style>
+            #string .python-class { margin: 100px 0px; }
+         </style>
+         <h3>
+            Strings in Python 
+         </h3>
+         <p>In Python ...</p>
+         <p class="python-class">Letters, words, and sentences are called <b>STRINGS</b>. We tell Python that we are intending to use a string by wrapping it in quotes.</p>
+         <pre>>>> type("What's up?")<br />&lttype 'str'&gt </pre>
+		 <p> Think of a string of characters.</p>
+      </article>
+      <article id="types-galore">
+         <style>
+            #types-galore .build { margin-top: 40px; }
+            #types-galore .large-font { margin: 70px 0px; }
+         </style>
+         <h3>Types</h3>
+         <div class="build">
+            <p>Python is extremely picky and needs to classify everything before it knows what to do with it.<br />Python knows that ...</p>
+            <p class="large-font">The number <b>1</b> is an <b>Integer</b>.
+            <p class="large-font">The word <b>"ladies"</b> is a <b>String</b>.
+            <p>Integers and Strings are <b>Types</b> in Python.</p>
+         </div>
+      </article>
+      <article id="types-picky">
+         <style>
+            #types-galore .build { margin-top: 40px; }
+            #types-galore .large-font { margin: 70px 0px; }
+         </style>
+         <h3>Types</h3>
+         <div class="build">
+            <pre>>>>1+1</pre>
+            <pre>2</pre>
+            <pre>>>>"1"+"1"</pre>
+            <pre>"11"</pre>
+            <pre>>>>"1"+2</pre>
+            <pre>
+Traceback (most recent call last):
+  File "<stdin />", line 1, in <module />
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+</pre>
+         </div>
+      </article>
+      <article id="programming-lingo">
+         <style>
+            #programming-lingo .build { margin-top: 40px; }
+            #programming-lingo .large-font { margin: 70px 0px; }
+         </style>
+         <h3>Programming Words</h3>
+         <p>Some programming words that we have learned so far:</p>
+         <p class="large-font"><b>Integer</b>.
+         <p class="large-font"><b>String</b>.
+         <p class="large-font"><b>Type</b>.
+         <p> Integers and Strings are Types </p>
+      </article>
+      <article id="back-python-robot">
+         <style>
+            #back-python-robot .large-font { margin: 80px 0 50px 0; }
+         </style>
+         <h3>
+            Why does Python need types? 
+         </h3>
+         <p>Python has pages and pages of instructions for what to do with different types of objects.</p>
+         <p class="large-font">When you ask Python what <b>1 + 2</b> is:</p>
+         <p>It knows that 1 is an INTEGER.</p>
+         <p>It knows that 2 is an INTEGER.</p>
+         <p>It finds the instruction sheet for INTEGER.</p>
+         <p>Scans the instruction sheet for <b>+</b>.</p>
+         <p>Understands that when you ask for an INTEGER + INTEGER, you want it to add the two together.</p>
+      </article>
+      <article id="types-matter">
+         <style>
+            #back-python-robot .large-font { margin: 80px 0 50px 0; }
+         </style>
+         <h3>
+            Why do types matter?
+         </h3>
+         <p> Python knows what to do with objects depending on their types </p>
+         <p> Each type has its own set of instructions </p>
+         <p> This will save you time writing detailed instructions to Python.</p>
+         <p> You don't have to explain to Python how to add two numbers, it already knows.</p>
+         <p> You just have to tell it to add two numbers.</p>
+      </article>
+      <article id="string-class">
+         <style>
+            #string-class div { padding: 20px; }
+         </style>
+         <h3>String</h3>
+         <div class="class-diagram">
+            "Ladies"<br /><br />
+            "Hello World!"<br /><br />
+            "The Zen of Python, by Tim Peters 
+            <br />
+            &nbsp Beautiful is better than ugly.
+            <br />
+            &nbsp Explicit is better than implicit.
+            <br />
+            &nbsp Simple is better than complex.
+            "
+            <br />
+         </div>
+         <p class="large-font">Each one is an instance of the type String.</p>
+      </article>
+      <article>
+         <h3>
+            Simple String Manipulation
+         </h3>
+         <section class="build">
+            <pre>>>> "laura".capitalize()</pre>
+            <pre>"Laura"</pre>
+            <pre>>>>"Hello you".replace("you", "Sam")</pre>
+            <pre>'Hello Sam'</pre>
+            <pre>>>>"No More CAPS".lower()"</pre>
+            <pre>'no more caps'</pre>
+         </section>
+      </article>
+      <article>
+         <h3>Building Strings</h3>
+         <section class="build">
+            <pre>>>>"There are " + "30 " + "days in April"</pre>
+            <pre>'There are 30 days in April'</pre>
+            <pre>>>>"Today is a " + "Saturday"</pre>
+            <pre>'Today is a Saturday'</pre>
+            <pre>>>> "There are " + "7 " + "days in a week and " + "30 " + \
+... "days in April"
+</pre>
+            <pre>'There are 7 days in a week and 30 days in April'</pre>
+         </section>
+      </article>
+      <article>
+         <h3>
+            Python Numeric types support these operations
+         </h3>
+         <section class="build">
+            <pre>>>>abs(-99)</pre>
+            <pre>99</pre>
+            <pre>>>>pow(2,3)</pre>
+            <pre>8</pre>
+            <pre>>>>5 % 2</pre>
+            <pre>1</pre>
+         </section>
+      </article>
+      <article id="python-builtin-functions">
+         <style>
+            #python-builtin-functions .large-font { margin: 60px 0px; }
+         </style>
+         <h3>
+            Functions 
+         </h3>
+         <div class="build">
+            <p class="large-font"><b>abs</b> and <b>pow</b> are builtin functions that you can use with integers</p>
+            <p class="large-font"><b>capitalize</b> and <b>replace</b> are string functions</p>
+            <p class="large-font">Functions are actions.</p>
+         </div>
+      </article>
+      <article id="class-functions">
+         <style>
+            #class-functions .large-font { margin: 200px 0px; }
+         </style>
+         <p class="large-font">Types come with builtin functions.</p>
+      </article>
+      <article id="mixing-functions">
+         <h3>
+            Error messages
+         </h3>
+         <p> If you ask Python to do something that it doesn't know how to do, it will give you an error. </p>
+         <p> Get in the habit of reading the error messages, they will give you a clue on what went wrong. </p>
+         <pre>>>> pow("Lady", "Gaga") <br />Traceback (most recent call last):<br /> File "<stdin />", line 1, in <module /> <br /> TypeError: unsupported operand type(s) for ** or pow(): <br />'str' and 'str'
+		</pre>
+      </article>
+      <article id="boolean">
+         <h3>Meet one more type - Boolean</h3>
+         <p> Booleans are a special type. There are only two booleans: </p>
+         <p><b>True</b></p>
+         <p><b>False</b></p>
+         <p>Booleans are used extensively in programming, we will see examples in upcoming slides.</p>
+      </article>
+      <article>
+         <h3>
+            Laziness
+         </h3>
+         <p>"Laziness... The first great virtue of a programmer." -- Larry Wall </p>
+         <p>What if we could type in "ladieslearningcode" just once, and store it for later use? We can!</p>
+         <section>
+            <pre>>>> llc = "ladieslearningcode"
+		  <br />>>> llc
+		  <br />"ladieslearningcode"</pre>
+         </section>
+         <p> We've just created a variable <b>llc</b> and gave it the <b>value</b> "ladieslearningcode".</p>
+      </article>
+      <article>
+         <h3>
+            Why are variables useful? 
+         </h3>
+         <p>A variable is called just that because its value can change 
+         <section class="build">
+            <pre>>>>party_budget = 1000</pre>
+            <div>party_budget <img src="assets/images/arrow.png" />1000</div>
+            <p>Now let's ask for the value of party_budget.</p>
+            <pre>>>> party_budget</pre>
+            <pre>1000</pre>
+         </section>
+      </article>
+      <article>
+         <p>Changing a variable's value</p>
+         <section class="build">
+            <pre>>>>party_budget = 1500</pre>
+            <div>party_budget<img src="assets/images/arrow.png" /> 1500</div>
+            <p>Let's ask for the value of party_budget once again.</p>
+            <pre>>>>party_budget</pre>
+            <pre>1500</pre>
+         </section>
+      </article>
+      <article>
+         <h3>Multiple Variables</h3>
+         <p>Let's introduce another variable.</p>
+         <section class="build">
+            <pre>>>>team_building_budget = party_budget</pre>
+            <pre>1500</pre>
+            <div>party_budget<img src="assets/images/arrow.png" /> 1500 <img src="assets/images/back-arrow.png" />
+               team_building_budget
+            </div>
+         </section>
+      </article>
+      <article>
+         <p>Let's ask for the value of each variable.</p>
+         <section class="build">
+            <pre>>>>party_budget</pre>
+            <pre>1500</pre>
+            <pre>>>>team_building_budget</pre>
+            <pre>1500</pre>
+            <p>Now set party_budget back to 1000 :(</p>
+            <pre>>>>party_budget = 1000 </pre>
+         </section>
+      </article>
+      <article>
+         <p>Let's ask for the value of each variable again.</p>
+         <section class="build">
+            <pre>>>>party_budget</pre>
+            <pre>1000</pre>
+            <pre>>>>team_building_budget</pre>
+            <pre>1500</pre>
+         </section>
+      </article>
+      <article>
+         <h3>
+            Manipulating Variables
+         </h3>
+         <p>
+            When you assign a value of type INTEGER to a variable, you can use the variable the same way you would use an
+            INTEGER
+         </p>
+         <section class="build">
+            <pre>>>>party_budget * 1000</pre>
+            <pre>1000000</pre>
+         </section>
+      </article>
+      <article>
+         <h3>
+            How much can we spend on our party?	
+         </h3>
+         <p>
+            When you assign a value of type INTEGER to a variable, you can use the variable the same way you would use an
+            INTEGER
+         </p>
+         <section class="build">
+            <pre>>>>party_budget</pre>
+            <pre>1000</pre>
+            <p> What? That's it?! I thought we had 1000000 to spend? What happenend?</p>
+         </section>
+      </article>
+      <article>
+         <h3>
+            Remember, computers need exact instructions
+         </h3>
+         <p> You have asked your computer to multiply party_budget by 1000, but you never told it
+            that the result will be the new party_budget.
+         <p>
+         <section class="build">
+            <pre>>>>party_budget = party_budget * 1000</pre>
+            <pre>>>>party_budget</pre>
+            <pre>1000000</pre>
+         </section>
+      </article>
+      <article>
+         <h3>
+            String Manipulation With Our Variable
+         </h3>
+         <pre>>>>llc = "ladieslearningcode"</pre>
+         <p>You can now use this variable exactly like you would have used  strings such as "ladieslearningcode" before.</p>
+         <section class="build">
+            <pre>>>> llc.capitalize()</pre>
+            <pre>"Ladieslearningcode"</pre>
+            <pre>>>> "I'm having so much fun at " + llc</pre>
+            <pre>"I'm having so much fun at ladieslearningcode"</pre>
+         </section>
+      </article>
+      <article>
+         <h3>Modifying the value with a function</h3>
+         <p> What's the value of llc? </p>
+         <pre>>>>llc</pre>
+         <pre>"ladieslearningcode"</pre>
+      </article>
+      <article id="wait-why">
+         <style>
+            #wait-why p { margin: 50px 0px; }
+         </style>
+         <h3>Wait. Why didn't it change?</h3>
+         <section class="build">
+            <p class="large-font">llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
+            <div>llc <img src="assets/images/arrow.png" /> "ladieslearningcode"</div>
+            <p class="large-font">If you want the value to change, you have to set it to something else.</p>
+         </section>
+      </article>
+      <article>
+         <section class="build">
+            <pre>>>> llc = llc.upper()</pre>
+            <pre>"LADIESLEARNINGCODE"</pre>
+            <pre>>>> llc</pre>
+            <pre>"LADIESLEARNINGCODE"</pre>
+            <p class="large-font">If you want the value of a variable to change, you have to explicitly tell it to change.</p>
+         </section>
+      </article>
+      <article>
+         <h3>Building Strings - Revisited</h3>
+         <section class="build">
+            <pre>>>>"There are " + "30 " + "days in April"</pre>
+            <pre>>>>days = 30
+>>>"There are %d days in April" % days </pre>
+            <pre>'There are 30 days in April'</pre>
+            <pre>>>>"Today is a "  + "Saturday"</pre>
+            <pre>>>>day = "Saturday"
+>>>"Today is a %s" % day</pre>
+            <pre>'Today is a Saturday'</pre>
+         </section>
+      </article>
+      <article>
+         <section class="build">
+            <pre>
+>>>weekdays = 7
+>>>months = 12
+>>>"There are %d days in a week and %d months in a year"
+% (weekdays, months)</pre>
+            <pre>'There are 12 days in a week and 12 months in a year'</pre>
+         </section>
+      </article>
+      <article id="recap-one">
+         <style>
+            #recap-one .large-font { margin: 50px 0px; text-align: center; }
+         </style>
+         <h3>
+            Recap Slide
+         </h3>
+         <div class="build">
+            <p class="large-font">Integer</p>
+            <p class="large-font">String</p>
+            <p class="large-font">Boolean</p>
+            <p class="large-font">Variable</p>
+            <p class="large-font">Type</p>
+            <p class="large-font">Function</p>
+         </div>
+      </article>
+      <article>
+         <h3>
+            Back to Laziness
+         </h3>
+         <p> Write a program only once and run it forever. </p>
+         <p> You can write your instructions to a file, save it, then tell python to run the instructions in
+            the file.
+         </p>
+         <pre>python first_program.py</pre>
+      </article>
+      <article>
+         <h3>
+            Writing Our First Program
+         </h3>
+         <p>
+            Open any text editor, add this code and save it as party.py 
+         </p>
+         <section>
+            <pre>party_budget = 1000<br />party_budget</pre>
+         </section>
+         <p>To run your program, go to the directory where you saved your file and type:</p>
+         <section>
+            <pre>python party.py</pre>
+         </section>
+         <div class="build">
+            <p>Nothing happens? I don't see the party budget?!
+         </div>
+      </article>
+      <article id="python-output">
+         <style>
+            #python-output .large-font { margin: 50px 0px; }
+         </style>
+         <h3>
+            Outputting Text to the Screen
+         </h3>
+         <p>When you type a variable name in the interpreter, Python knows you want to see the variable's value.</p>
+         <p>When you run a program from a saved file, if you want to see a variable's value you need
+            to be explicit.
+         </p>
+         <section>
+            <pre>party_budget = 1000<br />print party_budget</pre>
+            <p><b>print</b> means output to screen</p>
+         </section>
+         <p>(example in code/party.py)</p>
+         <p>(example in code/cat.py)</p>
+      </article>
+      <article>
+         <h3> Strings - Special Characters </h3>
+         <p>
+            print "CSI Annex"<br />	
+            print "720 Bathurst Street"<br />
+            print "Toronto, Ontario"<br />
+         </p>
+         <p>print "CSI Annex \n720 Bathurst Street \nToronto, Ontario"</p>
+         <p> Try these other special characters: </p>
+         <p>
+            \' <br />
+            \" <br />
+            \\ <br />
+            \t <br />
+            \n <br />
+         </p>
+      </article>
+      <article id="real-twitter">
+         <style>
+            #real-twitter .large-font { margin: 60px 0px; }
+         </style>
+         <h3>
+            First Program for Real
+         </h3>
+         <p>Let's make a tickets program</p>
+         <p>1. We start with a given number of tickets</p>
+         <p>2. We ask the user how many tickets they want</p>
+         <p>3. We keep track of how many tickets are left</p>
+         <p>4. We show the user how many tickets they bought</p>
+         <p>5. We show the user how many tickets are left</p>
+         <br/>
+      </article>
+      <article>
+         <h3>
+            Asking for Input
+         </h3>
+         <p>There's a function that you can use to get input from a user</p>
+         <section class="build">
+            <pre>>>>raw_input("What's your name?\n")</pre>
+            <pre>>>>name = raw_input("What's your name?\n")</pre>
+            <pre>>>>age = raw_input("How old are you?\n")</pre>
+            <p>User input is always returned as a <b>string</b></p>
+         </section>
+      </article>
+      <article id="ask-for-tweet">
+         <style>
+            #ask-for-tweet .build { margin-top: 60px; }
+         </style>
+         <h3>
+            Back to your Tickets Program
+         </h3>
+         <p>Working with your group, write a progam that looks like this:</p>
+         <br/>
+         <div>
+            <p>
+               There are 100 ticket(s) left <br/>
+               Get your tickets before we sell out!<br/>
+               How many tickets would you like?<br/>
+               <b>2</b><br/>
+               You bought 2 ticket(s)<br/>
+               There are 98 ticket(s) left<br/>
+            </p>
+            <br/>
+            <p>(answers in assignments/tickets_1.py)</p>
+         </div>
+      </article>
+
+      <article id="conditional-twitter-1">
+         <style>
+            #conditional-twitter-1 .large-font { margin-top: 100px; }
+         </style>
+         <h3>
+            Breaking Your Program 
+         </h3>
+         <p class="large-font">Try using your program multiple times and try <b>breaking</b> it!</p>
+         <p class="large-font">What could go wrong with your program?</p>
+         <section class="build">
+            <p class="large-font"> Now that we know it's broken, we need to <b>Fix it!</b>	
+         </section>
+      </article>
+      <article id="conditional-instructions">
+         <style>
+            #conditional-instructions .large-font { margin-top: 80px; }
+         </style>
+         <h3>
+            Conditional Logic
+         </h3>
+         <p>We can't sell more tickets than we have.</p>
+		 <p>If the user asks for <b>fewer</b> tickets than what we have, we sell them tickets.</p>
+		 <p>If the user asks for <b>more</b> tickets than what we have, we do <b>NOT</b> sell them tickets.</p>
+         <br/>
+         <p> How do we tell the program to do something different in each case?</p>
+      </article>
+      <article id="condition-logic-syntax">
+         <h3>
+            Conditional Logic
+         </h3>
+         <pre>if True:
+	  <br />    print "Good choice!"
+	  <br />else:
+	  <br />    print "This program will always ignore me :("
+	  </pre>
+         <p class="large-font"> Indentation Matters </p>
+      </article>
+      <article id="greater-than">
+         <style>
+            #greater-than .large-font { margin: 100px 0px; }
+         </style>
+         <h3>
+            Conditional Logic: Greater Than
+         </h3>
+         <p class="large-font">The math symbol for <b>greater than</b> is <b>></b></p>
+         <p>Try the code below in the python interpreter:</p>
+         <section class="build">
+            <pre>>>> 200 > 100</pre>
+            <pre>True</pre>
+         </section>
+      </article>
+      <article>
+         <h3>
+            Conditional Logic: Greater Than
+         </h3>
+         <p>Now try:</p>
+         <section class="build">
+            <pre>>>>num_tickets = 100</pre>
+            <pre>>>>120 > num_tickets</pre>
+            <pre>True</pre>
+            <pre>>>>30 > num_tickets</pre>
+            <pre>False</pre>
+         </section>
+      </article>
+      <article>
+         <h3>
+            Try it out!
+         </h3>
+         <p>
+            Fix your tickets program so that it handles the case where the user asks for more tickets than what you have.
+         </p>
+         <pre>if tickets_wanted > num_tickets:
+		<br />    print "Sorry we don't have that many tickets available"
+		<br />else:¬
+		<br />    #DO SOME STUFF HERE
+		<br />    print "Start Selling Tickets"
+		</pre>
+         <p>(answers in assignments/tickets_2.py)</p>
+      </article>
+      <article>
+         <h3>
+            What if there are more possibilities?
+         </h3>
+         <pre>if today == "Saturday":
+		<br />    print "You can sleep in, but you're better off going to LLC" 
+		<br />elif today == "Sunday":
+		<br />    print "Fine, sleep in"
+		<br />else:
+		<br />    print "You're late for work again!"
+		</pre>
+         <p> Try running this with different values of today.</p>
+         <p>(example in code/weekdays.py)</p>
+      </article>
+      <article>
+         <h3>Hello, Operator?</h3>
+         <table>
+            <tr>
+               <td>Operator</td>
+               <td>True</td>
+               <td>False</td>
+            </tr>
+            <tr>
+               <td>==</td>
+               <td>99 == 99</td>
+               <td>99 == 100</td>
+            </tr>
+            <tr>
+               <td>!=</td>
+               <td>99 != 100</td>
+               <td>99 != 99</td>
+            </tr>
+            <tr>
+               <td>></td>
+               <td>100 > 99</td>
+               <td>99 > 100</td>
+            </tr>
+            <tr>
+               <td><</td>
+               <td>99 < 100</td>
+               <td>100 < 99</td>
+            </tr>
+            <tr>
+               <td>>=</td>
+               <td>99 >= 99</td>
+               <td>99 >= 100</td>
+            </tr>
+            <tr>
+               <td><=</td>
+               <td>99 <= 99</td>
+               <td>100 <= 99</td>
+            </tr>
+         </table>
+      </article>
+      <article id="recap-two">
+         <h3>Recap Slide</h3>
+         <style>
+            #recap-two .large-font { margin: 50px 0px; text-align: center; }
+         </style>
+         <div class="build">
+            <p class="large-font">print</p>
+            <p class="large-font">raw_input</p>
+            <p class="large-font">if .. else</p>
+            <p class="large-font">if .. elif .. else</p>
+         </div>
+      </article>
+      <article id="guess-my-number">
+         <h3>
+            Let's Make a Game - Guess My Number
+         </h3>
+         <p>Your program is <b>"thinking"</b> about a number and you need to guess what that number is.</p>
+         <section class="build">
+            <pre>>>>import random</pre>
+            <pre>>>>secret_number = random.randint(1,20)</pre>
+            <p>We know how to ask the player for input</p>
+            <p>We know how to compare the guess to the secret number</p>
+            <p>But what if we want to give the user more than one chance to get it right?</p>
+            <p>How would you do this?</p>
+         </section>
+      </article>
+      <article id="while-loop">
+         <h3>
+            Meet the While Loop
+         </h3>
+         <section class="build">
+            <pre>
+some_condition = True
+while some_condition:
+    print "Are we there yet?"
+</pre>
+            <p>This program will run as long as some_condition is True</p>
+            <p>Please make it <b>STOP</b></p>
+            <p> Meet Ctrl-C </p>
+            <pre>
+some_condition = True
+while some_condition:
+    print "Are we there yet?"
+    some_condition = False
+</pre>
+         </section>
+      </article>
+      <article id="while-loop-example">
+         <h3>
+            While Loop Example	
+         </h3>
+         <section class="build" />
+         <pre>
+hungry = "yes"
+while hungry == "yes":
+    print "Eat"
+    hungry = raw_input("Are you hungry?\n")
+print "No more eating"
+</pre>
+         <p> Another way to say the same thing </p>
+         <pre>
+while True:
+    print "Eat"
+    hungry = raw_input("Are you hungry?\n")
+    if hungry != "yes":
+        print "No more eating"
+        break
+</pre>
+         <p>(example in code/hungry.py and code/hungry2.py)</p>
+      </article>
+ 
+      <article>
+         <h3>
+            Guess My Number
+         </h3>
+         <p>Now you know everything you need to build this game!</p>
+         <p>
+            I am thinking of a number between 1 and 20.</br>
+            Take a guess: <b>1</b></br>
+            Your guess is too low.</br>
+            Take a guess: <b>2</b></br>
+            Your guess is too low.</br>
+            Take a guess: <b>20</b></br>
+            Your guess is too high.</br>
+            Take a guess: <b>10</b></br>
+            Your guess is too low.</br>
+            Take a guess: <b>15</b></br>
+            Good job! You guessed my number in 5 guesses!
+         </p>
+         <p>(answers in assignments/random_game.py)</p>
+      </article>
+      <article>
+         <h3>Tell me exactly how many times</h3>
+         <section class="build">
+            <pre>
+print "Counting to 10"
+for i in range(0,11):
+    print i
+
+</pre>
+            <p> What's range?</p>
+            <p> Why start at 0? </p>
+            <p> Why end at 11? </p>
+         </section>
+      </article>
+      <article>
+         <h3>Repeat until something happens</h3>
+         <section>
+            <pre>
+secret = "secretcode"
+print "You get 3 chances to get this right"
+for i in range(0,3):
+    password = raw_input("Please enter your password: ")
+    if password == secret:
+        print "You're in!"
+        break
+if password != secret:
+    print "Sorry you've lost your chance, it's too late now"
+
+</pre>
+            <p>(example in code/secret_word.py)</p>
+         </section>
+      </article>
+      <article>
+         <h3>While loop vs. For loop</h3>
+         <p> Anything that you can do with a <b>while</b> loop you can do with a <b>for</b> loop </p>
+         <section class="build" />
+         <pre>
+print "Counting to 10"
+for i in range(0,11):
+    print i
+
+</pre>
+         <pre>
+print "Counting to 10"
+x = 0
+while x < 11:
+    print x
+    x = x + 1
+</pre>
+      </article>
+      <article id="list-class">
+         <style>
+            #string-class div { padding: 20px; }
+         </style>
+         <h3>Lists</h3>
+         <section class="build">
+            <pre>
+>>>[1, 2, 3, 4, 5]
+>>>numbers = [1, 2, 3, 4, 5]
+</pre>
+            <pre>
+>>>numbers
+</pre>
+            <pre>
+[1, 2, 3, 4, 5]
+</pre>
+            <pre>
+>>>friends = ['Rachel', 'Ross', 'Monica', 'Phoebe',
+...'Joey', 'Chandler'] 
+</pre>
+            <pre>
+>>>friends
+</pre>
+            <pre>
+['Rachel', 'Ross', 'Monica', 'Phoebe', 'Joey', 'Chandler']
+</pre>
+         </section>
+         </div>
+      </article>
+      <article id="access-list-class">
+         <section class="build">
+            <pre>>>>friends[0]</pre>
+            <pre>'Rachel'</pre>
+            <pre>>>>friends[1]</pre>
+            <pre>'Ross'</pre>
+            <pre>>>>friends[10]</pre>
+            <pre>
+Traceback (most recent call last):
+  File "<stdin />", line 1, in <module />
+IndexError: list index out of range
+</pre>
+            <pre>>>>len(friends)
+6</pre>
+         </section>
+      </article>
+      <article id="list-class">
+         <style>
+            #list-class div { padding: 20px; }
+         </style>
+         <h3>Looping over items in a list</h3>
+         <pre>
+>>>for friend in friends:
+...    print friend
+		</pre>
+         <pre>
+Rachel
+Ross
+Monica
+Phoebe
+Joey
+Chandler
+</pre>
+         <p> Write a program that prints all the days of the week </p>
+         <p> (answers in assignments/print_weedays.py)</p>
+      </article>
+      <article>
+         <h3>
+            Adding Items to a List
+         </h3>
+         <p> We can add items to a list, remove items from a list and even combine lists together </p>
+         <pre>
+>>>woody_allen_movies = ["Vicky Cristina Barcelona", 
+... "Whatever Works"]
+>>>new_movie = "Midnight in Paris"
+>>>woody_allen_movies.append(new_movie)
+>>>woody_allen_movies
+</pre>
+         <p><b>append</b> adds an item to the end of the list.</p>
+      </article>
+      <article>
+         <h3>
+            Removing Items from a List
+         </h3>
+         <p> We can add items to a list, remove items from a list and even combine lists together </p>
+         <pre>
+>>>woody_allen_movies = ["Vicky Cristina Barcelona", 
+... "Whatever Works"]
+>>>new_movie = "Midnight in Paris"
+>>>woody_allen_movies.append(new_movie)
+>>>woody_allen_movies.append(new_movie)
+>>>woody_allen_movies.remove(new_movie)
+</pre>
+         <pre>
+>>> woody_allen_movies.remove("inception")
+Traceback (most recent call last):
+  File "<stdin />", line 1, in <module />
+ValueError: list.remove(x): x not in list
+</pre>
+         <p> <b>remove(x)</b> removes the first item from the list whose value is x. It is an error if there is no such
+            item.
+         </p>
+      </article>
+      <article id="recap-three">
+         <style>
+            #recap-three .large-font { margin: 50px 0px; text-align: center; }
+         </style>
+         <h3>
+            Recap Slide
+         </h3>
+         <div class="build">
+            <p class="large-font">while</p>
+            <p class="large-font">for</p>
+            <p class="large-font">break</p>
+            <p class="large-font">list</p>
+         </div>
+      </article>
+      <article id="from-scratch">
+         <style>
+            #from-scratch .large-font { margin-top: 70px }
+         </style>
+         <h3>Hangman</h3>
+         <p>Let's make a hangman game using what we learnt today.</p>
+         <p>But before you start coding away, it helps to think about
+            what you're trying to do.
+         </p>
+         <p>Remember, computers need specific instructions, so you need
+            to break it down.
+         </p>
+         <p>You can start by playing hangman on paper with each other.</p>
+         <p>(answers in assignments/hangman.py)</p>
+      </article>
+      <article id="credits-book">
+         <style>
+            #credits-book img { margin: 30px 100px 100px 200px; }
+         </style>
+         <h3>Credits</h3>
+         <p>Inspired by <b>Python Programming for the absolute beginner</b></p>
+         <img src="assets/images/absolute_beginner.jpg" />
+      </article>
+      <article id="credits-twg">
+         <style>
+            #credits-twg .large-font { line-height: 80px; margin: 100px; text-align: center; }
+         </style>
+         <p class="large-font">
+            Big, big thank you to <br /><a href="http://www.freshbooks.com">Freshbooks</a>, 
+            to <a href="http://ladieslearningcode.com/">Ladies Learning Code</a>
+            and to  <b>all the mentors</b>! 
+         </p>
+      </article>
+   </body>
+</html>
+
