@@ -15,7 +15,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Ladies Learning Python</title>
+      <title>Girls Learning Python</title>
       <meta charset="utf-8" />
       <script src="assets/default.js"></script>
    </head>
@@ -243,7 +243,7 @@
          <div class="build">
             <p>Python is extremely picky and needs to classify everything before it knows what to do with it.<br />Python knows that ...</p>
             <p class="large-font">The number <b>1</b> is an <b>Integer</b>.
-            <p class="large-font">The word <b>"ladies"</b> is a <b>String</b>.
+            <p class="large-font">The word <b>"girls"</b> is a <b>String</b>.
             <p>Integers and Strings are <b>Types</b> in Python.</p>
          </div>
       </article>
@@ -312,7 +312,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </style>
          <h3>String</h3>
          <div class="class-diagram">
-            "Ladies"<br /><br />
+            "Girls"<br /><br />
             "Hello World!"<br /><br />
             "The Zen of Python, by Tim Peters 
             <br />
@@ -405,13 +405,13 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             Laziness
          </h3>
          <p>"Laziness... The first great virtue of a programmer." -- Larry Wall </p>
-         <p>What if we could type in "ladieslearningcode" just once, and store it for later use? We can!</p>
+         <p>What if we could type in "girlslearningcode" just once, and store it for later use? We can!</p>
          <section>
-            <pre>>>> llc = "ladieslearningcode"
-		  <br />>>> llc
-		  <br />"ladieslearningcode"</pre>
+            <pre>>>> glc = "girlslearningcode"
+		  <br />>>> glc
+		  <br />"girlslearningcode"</pre>
          </section>
-         <p> We've just created a variable <b>llc</b> and gave it the <b>value</b> "ladieslearningcode".</p>
+         <p> We've just created a variable <b>glc</b> and gave it the <b>value</b> "girlslearningcode".</p>
       </article>
       <article>
          <h3>
@@ -511,20 +511,20 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <h3>
             String Manipulation With Our Variable
          </h3>
-         <pre>>>>llc = "ladieslearningcode"</pre>
-         <p>You can now use this variable exactly like you would have used  strings such as "ladieslearningcode" before.</p>
+         <pre>>>>glc = "girlslearningcode"</pre>
+         <p>You can now use this variable exactly like you would have used  strings such as "girlslearningcode" before.</p>
          <section class="build">
-            <pre>>>> llc.capitalize()</pre>
-            <pre>"Ladieslearningcode"</pre>
-            <pre>>>> "I'm having so much fun at " + llc</pre>
-            <pre>"I'm having so much fun at ladieslearningcode"</pre>
+            <pre>>>> glc.capitalize()</pre>
+            <pre>"Girlslearningcode"</pre>
+            <pre>>>> "I'm having so much fun at " + glc</pre>
+            <pre>"I'm having so much fun at girlslearningcode"</pre>
          </section>
       </article>
       <article>
          <h3>Modifying the value with a function</h3>
-         <p> What's the value of llc? </p>
-         <pre>>>>llc</pre>
-         <pre>"ladieslearningcode"</pre>
+         <p> What's the value of glc? </p>
+         <pre>>>>glc</pre>
+         <pre>"girlslearningcode"</pre>
       </article>
       <article id="wait-why">
          <style>
@@ -532,17 +532,17 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          </style>
          <h3>Wait. Why didn't it change?</h3>
          <section class="build">
-            <p class="large-font">llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
-            <div>llc <img src="assets/images/arrow.png" /> "ladieslearningcode"</div>
+            <p class="large-font">glc is still pointing to "girlslearningcode". You didn't tell it to point to a different string.</p>
+            <div>glc <img src="assets/images/arrow.png" /> "girlslearningcode"</div>
             <p class="large-font">If you want the value to change, you have to set it to something else.</p>
          </section>
       </article>
       <article>
          <section class="build">
-            <pre>>>> llc = llc.upper()</pre>
-            <pre>"LADIESLEARNINGCODE"</pre>
-            <pre>>>> llc</pre>
-            <pre>"LADIESLEARNINGCODE"</pre>
+            <pre>>>> glc = glc.upper()</pre>
+            <pre>"GIRLSLEARNINGCODE"</pre>
+            <pre>>>> glc</pre>
+            <pre>"GIRLSLEARNINGCODE"</pre>
             <p class="large-font">If you want the value of a variable to change, you have to explicitly tell it to change.</p>
          </section>
       </article>
@@ -648,6 +648,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             \n <br />
          </p>
       </article>
+	  <!--
       <article id="real-twitter">
          <style>
             #real-twitter .large-font { margin: 60px 0px; }
@@ -663,6 +664,30 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
          <p>5. We show the user how many tickets are left</p>
          <br/>
       </article>
+	  -->
+      <article id="guess-my-number">
+         <h3>
+            Let's Make a Game - Guess My Number
+         </h3>
+         <p>Your program is <b>"thinking"</b> about a number and you need to guess what that number is.</p>
+		    <p>Make your computer "think" of a number (the secret number)</p>
+		    <p>Ask the player for input (their guess)</p>
+            <p>Compare the guess to the secret number</p>
+			<p>Let the player know if they guessed right</p>
+			<p>
+			<b>How do we do this?</b>
+			</p>
+	  </article>
+	     <article>
+         <h3>
+            Secret number
+         </h3>
+         <p>There's a function that you can use to get input from a user</p>
+
+		  <pre>>>>import random</pre>
+          <pre>>>>secret_number = random.randint(1,20)</pre>
+
+	  </article>
       <article>
          <h3>
             Asking for Input
@@ -674,125 +699,29 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             <pre>>>>age = raw_input("How old are you?\n")</pre>
             <p>User input is always returned as a <b>string</b></p>
          </section>
-      </article>
+		</article>
       <article id="ask-for-tweet">
          <style>
             #ask-for-tweet .build { margin-top: 60px; }
          </style>
          <h3>
-            Back to your Tickets Program
+            Try it out!
          </h3>
          <p>Working with your group, write a progam that looks like this:</p>
          <br/>
          <div>
             <p>
-               There are 100 ticket(s) left <br/>
-               Get your tickets before we sell out!<br/>
-               How many tickets would you like?<br/>
+               What is the secret number <br/>
                <b>2</b><br/>
-               You bought 2 ticket(s)<br/>
-               There are 98 ticket(s) left<br/>
+               You guessed 2 <br/>
             </p>
             <br/>
-            <p>(answers in assignments/tickets_1.py)</p>
+            <p>(answers in assignments/guess_my_number_1.py)</p>
          </div>
       </article>
-
-      <article id="conditional-twitter-1">
-         <style>
-            #conditional-twitter-1 .large-font { margin-top: 100px; }
-         </style>
-         <h3>
-            Breaking Your Program 
-         </h3>
-         <p class="large-font">Try using your program multiple times and try <b>breaking</b> it!</p>
-         <p class="large-font">What could go wrong with your program?</p>
-         <section class="build">
-            <p class="large-font"> Now that we know it's broken, we need to <b>Fix it!</b>	
-         </section>
-      </article>
-      <article id="conditional-instructions">
-         <style>
-            #conditional-instructions .large-font { margin-top: 80px; }
-         </style>
-         <h3>
-            Conditional Logic
-         </h3>
-         <p>We can't sell more tickets than we have.</p>
-		 <p>If the user asks for <b>fewer</b> tickets than what we have, we sell them tickets.</p>
-		 <p>If the user asks for <b>more</b> tickets than what we have, we do <b>NOT</b> sell them tickets.</p>
-         <br/>
-         <p> How do we tell the program to do something different in each case?</p>
-      </article>
-      <article id="condition-logic-syntax">
-         <h3>
-            Conditional Logic
-         </h3>
-         <pre>if True:
-	  <br />    print "Good choice!"
-	  <br />else:
-	  <br />    print "This program will always ignore me :("
-	  </pre>
-         <p class="large-font"> Indentation Matters </p>
-      </article>
-      <article id="greater-than">
-         <style>
-            #greater-than .large-font { margin: 100px 0px; }
-         </style>
-         <h3>
-            Conditional Logic: Greater Than
-         </h3>
-         <p class="large-font">The math symbol for <b>greater than</b> is <b>></b></p>
-         <p>Try the code below in the python interpreter:</p>
-         <section class="build">
-            <pre>>>> 200 > 100</pre>
-            <pre>True</pre>
-         </section>
-      </article>
-      <article>
-         <h3>
-            Conditional Logic: Greater Than
-         </h3>
-         <p>Now try:</p>
-         <section class="build">
-            <pre>>>>num_tickets = 100</pre>
-            <pre>>>>120 > num_tickets</pre>
-            <pre>True</pre>
-            <pre>>>>30 > num_tickets</pre>
-            <pre>False</pre>
-         </section>
-      </article>
-      <article>
-         <h3>
-            Try it out!
-         </h3>
-         <p>
-            Fix your tickets program so that it handles the case where the user asks for more tickets than what you have.
-         </p>
-         <pre>if tickets_wanted > num_tickets:
-		<br />    print "Sorry we don't have that many tickets available"
-		<br />else:¬
-		<br />    #DO SOME STUFF HERE
-		<br />    print "Start Selling Tickets"
-		</pre>
-         <p>(answers in assignments/tickets_2.py)</p>
-      </article>
-      <article>
-         <h3>
-            What if there are more possibilities?
-         </h3>
-         <pre>if today == "Saturday":
-		<br />    print "You can sleep in, but you're better off going to LLC" 
-		<br />elif today == "Sunday":
-		<br />    print "Fine, sleep in"
-		<br />else:
-		<br />    print "You're late for work again!"
-		</pre>
-         <p> Try running this with different values of today.</p>
-         <p>(example in code/weekdays.py)</p>
-      </article>
-      <article>
-         <h3>Hello, Operator?</h3>
+	
+	  <article>
+         <h3> How do we compare the guess to the secret number?</h3>
          <table>
             <tr>
                <td>Operator</td>
@@ -831,6 +760,58 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             </tr>
          </table>
       </article>
+
+      <article id="conditional-instructions">
+         <style>
+            #conditional-instructions .large-font { margin-top: 80px; }
+         </style>
+         <h3>
+            Conditional Logic
+         </h3>
+		 <p>If the player guesses the right number they win</p>
+		 <p>If the player guesses the wrong number they lose</p>
+         <p> How do we tell the program to do something different in each case?</p>
+      </article>
+      <article id="condition-logic-syntax">
+         <h3>
+            Conditional Logic
+         </h3>
+         <pre>if True:
+	  <br />    print "Good choice!"
+	  <br />else:
+	  <br />    print "This program will always ignore me :("
+	  </pre>
+         <p class="large-font"> Indentation Matters </p>
+      </article>
+
+      <article>
+         <h3>
+            What if there are more possibilities?
+         </h3>
+         <pre>if today == "Saturday":
+		<br />    print "You can sleep in, but you're better off going to GLC" 
+		<br />elif today == "Sunday":
+		<br />    print "Fine, sleep in"
+		<br />else:
+		<br />    print "You're late for work again!"
+		</pre>
+         <p> Try running this with different values of today.</p>
+         <p>(example in code/weekdays.py)</p>
+      </article>
+
+	  <article>
+         <h3>
+           Use what you just learnt to compare the secret number to the player's guess 
+         </h3>
+
+		 <p>What is the secret number?</p>
+		 <p>2</p>
+		 <p>You guessed 2</p>
+		 <p>You lose</p>
+
+         <p>(answers in assignments/guess_my_number_2.py)</p>
+	  </article>
+
       <article id="recap-two">
          <h3>Recap Slide</h3>
          <style>
@@ -843,20 +824,15 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
             <p class="large-font">if .. elif .. else</p>
          </div>
       </article>
-      <article id="guess-my-number">
+
+	  <article>
          <h3>
-            Let's Make a Game - Guess My Number
+            What if you wanted to give the player more than one chance?
          </h3>
-         <p>Your program is <b>"thinking"</b> about a number and you need to guess what that number is.</p>
-         <section class="build">
-            <pre>>>>import random</pre>
-            <pre>>>>secret_number = random.randint(1,20)</pre>
-            <p>We know how to ask the player for input</p>
-            <p>We know how to compare the guess to the secret number</p>
-            <p>But what if we want to give the user more than one chance to get it right?</p>
-            <p>How would you do this?</p>
-         </section>
-      </article>
+		 <p>
+			You need to keep asking them to guess until they get it right
+		 </p>
+	  </article>	
       <article id="while-loop">
          <h3>
             Meet the While Loop
@@ -1117,7 +1093,7 @@ ValueError: list.remove(x): x not in list
          </style>
          <p class="large-font">
             Big, big thank you to <br /><a href="http://www.freshbooks.com">Freshbooks</a>, 
-            to <a href="http://ladieslearningcode.com/">Ladies Learning Code</a>
+            to <a href="http://ladieslearningcode.com/">Girls Learning Code</a>
             and to  <b>all the mentors</b>! 
          </p>
       </article>
